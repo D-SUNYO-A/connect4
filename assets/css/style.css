@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  font-family: "Bungee", sans-serif;
+}
+
+body {
+  background-color: #252233;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding: 40px 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: #252233;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 24px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #39334d;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#information {
+  display: flex;
+  width: 948px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vs span {
+  color: #fff;
+  text-align: center;
+  font-family: Bungee;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.player-wrappers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-family: Bungee;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.player1:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/jaune.png");
+  background-size: cover;
+  background-position: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+}
+
+.player2:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/rouge.png");
+  background-size: cover;
+  background-position: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+}
+
+#playerTurn {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#playerTurn span {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.startScreen {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #252233;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.startScreen button {
+  background-color: #ffffff;
+  font-size: 32px;
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 45%;
+}
+
+.grid-row {
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+}
+
+.grid-box {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  background: #252233;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+#message {
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Bungee;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
